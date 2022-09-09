@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Fourier Questions</title>
+        <script type = "module" src = "flashcardcode.js"></script>
+    </head>
+
+    <body>
+
+        <h1 style = "text-align: center">
+            WIP Question Submission
+        </h1>
+
+        <div id="newQContainer"  style = "text-align: center">
+            <form id="QcardForm">
+                <input id="newQ" type="text" placeholder="Type Question Here" style = "text-align: center" size = "50">
+                <br>
+              	<input id = "previewQ" type = "button" value = "Preview">
+              	<br>
+                <input id="submitQ" type="button" value="Submit Question"><!--onclick="cardAdd()"-->
+                <br>
+            </form>
+        </div>
+
+        <div id = "Qpreviewdiv">
+            <span>
+                Preview:
+            </span>
+            <div id = "Qpreviewcontainer">
+            </div>
+        </div>
+
+        <h1 style = "text-align: center">
+            Questions
+        </h1>
+
+        <p id="front" style = "text-align: center">
+            <!-- question lives here   -->
+        </p>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <div id ="activeCardButtons" style = "text-align: center">
+            <button id="prev"> <!--onclick="prevCard()"-->
+                Previous Question
+            </button>
+            <br>
+            <button id="next"> <!--onclick="nextCard()"-->
+                Next Question
+            </button>
+            <br>
+        </div>
+
+        <br>
+
+        <div id="newAContainer"  style = "text-align: center">
+            <form id="cardForm">
+                <input id="newAnswer" type="text" placeholder="Type Answer Here" style = "text-align: center" size = "50">
+                <br>
+              	<input id = "preview" type = "button" value = "Preview">
+              	<br>
+                <input id="submit" type="button" value="Submit"><!--onclick="cardAdd()"-->
+                <br>
+            </form>
+        </div>
+
+        <div id = "previewdiv">
+            <span>
+                Preview:
+            </span>
+            <div id = "previewcontainer">
+            </div>
+        </div>
+
+        <div id = "answers">
+        </div>
+
+    </body> 
+</html>
