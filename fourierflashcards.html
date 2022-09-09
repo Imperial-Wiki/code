@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Fourier Flashcards</title>
+        <script type = "module" src = "flashcardcode.js"></script>
+    </head>
+
+    <body>
+        <h1 style = "text-align: center">
+            Fourier Flashcards
+        </h1>
+
+        <p id="front" style = "text-align: center">
+            <!-- term lives here   -->
+        </p>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <p id="back" style = "text-align: center">
+            <!-- definition lives here   -->
+        </p>
+
+        <br>
+
+        <div id ="activeCardButtons" style = "text-align: center">
+            <button id="prev"> <!--onclick="prevCard()"-->
+                Previous Card
+            </button>
+            <br>
+            <button id="flip" type="button" value="Flip"> <!-- onclick="flash()" -->
+                Flip
+            </button>
+            <br>
+            <button id="next"> <!--onclick="nextCard()"-->
+                Next Card
+            </button>
+            <br>
+        </div>
+
+        <br>
+
+        <div id="formContainer"  style = "text-align: center">
+            <form id="cardForm">
+                <input id="newTerm" type="text" placeholder="Type Front Here" style = "text-align: center" size = "50">
+                <br>
+                <input id="newDef" type="text" placeholder="Type Back Here" style = "text-align: center" size = "50">
+                <br>
+              	<input id = "preview" type = "button" value = "Preview">
+              	<br>
+                <input id="submit" type="button" value="Submit"><!--onclick="cardAdd()"-->
+                <br>
+            </form>
+        </div>
+
+        <br>
+        
+        <h1 style = "text-align: center">
+            Table of Contents    
+        </h1>
+
+        <br>
+
+        <div id = "toc" style = "text-align: center">
+        </div>
+    </body> 
+</html>
